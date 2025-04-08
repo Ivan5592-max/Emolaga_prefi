@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3P Smartphone - Power, Performance, Perfection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 0;
+            position: relative;
+            z-index: 100;
+        }
+        
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+  
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+            z-index: -1;
+            border-radius: 0 0 50% 50%/0 0 20% 20%;
+            transform: scaleX(1.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+           
+            line-height: 1.2;
+        }
+        
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: var(--gray);
+        }
+        
+  
+        .logo {
+            margin: 40px 0;
+            position: relative;
+        }
+        
+        .logo img {
+            max-width: 250px;
+            height: auto;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease;
+        }
+        
+        .logo img:hover {
+            transform: scale(1.05) rotate(-5deg);
+        }
+        
+      
+        .cta {
+            margin: 50px 0;
+        }
+        
+        .cta a {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+        }
+        
+        .cta a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .cta a:hover::before {
+            left: 100%;
+        }
+        
+     
+        .floating {
+            position: absolute;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        .floating-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            right: -100px;
+        }
+        
+        .floating-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: -50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="Product.html">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+        </nav>
+
+        <div class="hero">
+            <div class="floating floating-1"></div>
+            <div class="floating floating-2"></div>
+            
+            <div class="intro">
+                <h1>Introducing the 3P - Power, Performance, and Perfection in Your Hands</h1>
+                <p>Say hello to the 3P, a revolutionary smartphone designed to push the boundaries of what a smartwatch can do.</p>
+                <p>With cutting-edge features, stunning design, and seamless performance, the 3P redefines your mobile experience, allowing you to stay ahead of the curve every day.</p>
+            </div>
+
+    
+
+            <div class="cta">
+                <a href="Product.html">Buy now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
